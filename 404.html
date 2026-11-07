@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Opening Host System…</title>
+  </head>
+  <body>
+    <script>
+      try {
+        sessionStorage.setItem('host-system-pages-redirect', location.pathname + location.search + location.hash);
+      } catch {
+        // GitHub Pages can still return the not-found page if storage is disabled.
+      }
+      location.replace(location.origin + '/host-system-site/');
+    </script>
+    <p><a href="/host-system-site/">Return to Host System</a></p>
+  </body>
+</html>
